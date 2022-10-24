@@ -11,19 +11,18 @@ const eleTitle = document.querySelector('h1');
 
 eleTitle.addEventListener('click', function () {
     for (let i=1; i<=100; i++){
-        eleSquares.innerHTML += (`<div class="sq">${i}</div>`);
-        console.log(i);        
-        if (i % 3 == 0){
-            eleSquares.innerHTML += (`<div class="sq-fizz">${i} ${'Fizz'}</div>`); 
-            console.log('Fizz'); 
-        if (i%5 ==0){
-            eleSquares.innerHTML += (`<div class="sq-buzz">${i} ${'Buzz'}</div>`);  
-            console.log('Buzz') 
-        }                  
-        }
+        console.log(i); 
         if(i%15==0 && i % 3 == 0){
             eleSquares.innerHTML += (`<div class="sq-fbuzz">${i} ${'FizzBuzz'}</div>`); 
             console.log('FizzBuzz');                     
+        }else if (i % 3 == 0){
+            eleSquares.innerHTML += (`<div class="sq-fizz">${i} ${'Fizz'}</div>`); 
+            console.log('Fizz'); 
+        }else if (i%5 ==0){
+            eleSquares.innerHTML += (`<div class="sq-buzz">${i} ${'Buzz'}</div>`);  
+            console.log('Buzz') 
+        }else{
+            eleSquares.innerHTML += (`<div class="sq">${i}</div>`);
         }
     }
 });
