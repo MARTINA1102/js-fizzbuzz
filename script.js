@@ -14,11 +14,15 @@ eleTitle.addEventListener('click', function () {
         eleSquares.innerHTML += (`<div class="sq">${i}</div>`);
         console.log(i);        
         if (i % 3 == 0){
-            eleSquares.innerHTML += (`<div class="sq">${i} ${'Fizz'}</div>`); 
-            console.log('Fizz');                   
+            eleSquares.innerHTML += (`<div class="sq-fizz">${i} ${'Fizz'}</div>`); 
+            console.log('Fizz'); 
+        if (i%5 ==0){
+            eleSquares.innerHTML += (`<div class="sq-buzz">${i} ${'Buzz'}</div>`);  
+            console.log('Buzz') 
+        }                  
         }
         if(i%15==0 && i % 3 == 0){
-            eleSquares.innerHTML += (`<div class="sq">${i} ${'FizzBuzz'}</div>`); 
+            eleSquares.innerHTML += (`<div class="sq-fbuzz">${i} ${'FizzBuzz'}</div>`); 
             console.log('FizzBuzz');                     
         }
     }

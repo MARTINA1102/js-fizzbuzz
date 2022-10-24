@@ -31,5 +31,30 @@ h1 {
 	align-items: center;
 	width: 5rem;
 	height: 5rem;
+	background-color: rgb(55, 55, 176);
+}
+
+.sq-fizz{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background-color: rgb(32, 148, 107);
+}
+.sq-fbuzz{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background-color: rgb(197, 14, 109);
+}
+.sq-buzz{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
 	background-color: gold;
 }
