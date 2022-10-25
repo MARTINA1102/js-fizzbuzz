@@ -12,7 +12,7 @@ const eleTitle = document.querySelector('h1');
 eleTitle.addEventListener('click', function () {
     for (let i=1; i<=100; i++){
         console.log(i); 
-        if(i%15==0 && i % 3 == 0){
+        if(i%15==0){
             eleSquares.innerHTML += (`<div class="sq-fbuzz">${i} ${'FizzBuzz'}</div>`); 
             console.log('FizzBuzz');                     
         }else if (i % 3 == 0){
